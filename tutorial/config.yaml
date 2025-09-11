@@ -1,0 +1,47 @@
+---
+
+dir:
+    cwd: .
+    root: .
+
+data:
+    save: /home/jinvk/AMW25/data 
+    load: /Users/yujinkang/AMW25/data/data.pkl
+    scale_X: True
+    scale_y: True
+    random_seed: 42
+    split: [0.6, 0.2, 0.2] # [train, valid, test]
+    input: sym # [sym, mat, both]
+    target: ['seebeck', 'cond_elec', 'cond_therm']
+    drop: ['formula', 'label', 'sg']
+    sym: ['n_rot','n_inv','n_rotoinv', 'n_mirror', 'n_rot_screw','1/2tran_screw','1/3tran_screw','3/4tran_screw','1/4tran_screw','1/6tran_screw','n_glide','1/2tran_glide','3/4tran_glide','1/4tran_glide','n_tr']
+
+model:
+    type: xgb_regressor # [linear_regressor, mlp_regressor, xgb_regressor]
+    save: ./model
+    mlp_args:
+        hidden_layer_sizes: [30, 20, 5, 20, 30]
+        activation: relu
+        solver: adam
+        random_state: 42
+    xgb_args:
+        n_estim: [200, 1200, 200] # [min, max, step]
+        max_depth: [5, 19, 2] # [min, max, step] 
+        lr: [0.01, 0.1, False] # [min, max, log]
+        lambda: [0.3, 0.5]
+        alpha: [0.3, 0.5]
+        early_stopping: 200
+    optuna:
+        stop: 0.90
+        direction: maximize # [minimize, maximize]
+        score: r2 # [mae, mse, rmse, r2]
+        seed: 3
+
+    
+
+plot:
+  save: ./fig
+  label: ['seebeck', 'cond_elec', 'cond_therm']
+
+
+

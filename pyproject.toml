@@ -1,0 +1,45 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "amw25"
+version = "0.1.0"
+authors = [
+  { name = "Yujin/Will Kang", email = "jinvk.to@gmail.com" },
+  ]
+description = "2025 KRICT ChemDX Hackathon"
+readme = "README.md"
+requires-python = ">=2.7"
+dependencies = [
+    "fastcluster",
+    "scikit-learn",
+    "xgboost",
+    "optuna",
+    "pandas",
+    "matplotlib",
+    "matminer",
+    "seaborn",
+    "shap",
+    "ipykernel",
+    "pyright",
+    ]
+
+[project.scripts]
+amw25 = "amw25.main:main"
+
+[tool.setuptools]
+packages = [
+    "amw25",
+    "amw25.models",
+    "amw25.preprocess",
+    "amw25.util",
+]
+
+[project.urls]
+Homepage = "https://github.com/dnlf1ff/AMW25"
+Issues = "https://github.com/dnlf1ff/cte2/AMW25"
