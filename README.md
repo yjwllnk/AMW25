@@ -1,7 +1,7 @@
 # AMW25_readme
 # AMW25 — Symmetry Fingerprinting for Thermoelectric Transport ML (KRICT ChemDX Hackathon 2025)
 
-> **Team AMW25 (Team 4)**: Dr. Abhijeet · Yujin/Will Kang · Chaehyeon Moon  
+> **Team AMW25 (Team 4)**: Dr. Abhijeet (ic39253@imail.iitm.ac.in) · Yujin/Will Kang (yjkang@snu.ac.kr) · Chaehyeon Moon (mch3824@hanyang.ac.kr)
 > **Goal**: Explore how **crystal symmetry operations** (space-group “ingredients”) relate to **transport properties** (including **lattice thermal conductivity**) using **machine learning**.
 
 ---
@@ -77,7 +77,7 @@ Below, we summarize the model evaluation trends observed in the project slides (
 
 ### Option A) Install via pip
 ```bash
-git clone git@github.com:boffintocoffin/AMW25.git
+git clone git@github.com:yjwllnk/AMW25.git
 cd AMW25
 pip install .
 ```
