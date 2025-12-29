@@ -45,7 +45,7 @@ We extend LitDX entries with additional descriptors and build a feature table fo
 
 ## 📈 Results (summary)
 
-> **Metric note**: We report **MAPE (Mean Absolute Percentage Error)**, a unitless error metric that is comparable across properties with different units. fileciteturn2file0
+> **Metric note**: We report **MAPE (Mean Absolute Percentage Error)**, a unitless error metric that is comparable across properties with different units. 
 
 Below, we summarize the model evaluation trends observed in the project slides (symmetry-only vs. Matminer-only vs. combined). 
 
