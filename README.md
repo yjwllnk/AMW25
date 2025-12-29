@@ -89,12 +89,6 @@ micromamba activate amw
 pip install .
 ```
 
----
-
-## ⚙️ Requirements
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
