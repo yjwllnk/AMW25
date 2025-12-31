@@ -8,7 +8,7 @@
 
 ## ✨ Motivation
 
-Transport properties in crystalline solids are governed by both chemistry and structure. In particular, **lattice thermal conductivity** is strongly influenced by how phonons propagate and scatter—processes that can be constrained by **crystal symmetry**.
+The thermoelectric (TE) transport properties of a material originates from its electronic band structure which is significantly influenced by its constituent elements and crystal symmetry. In particular, **conductivity (electrical, electronic thermal and lattice thermal)** is strongly influenced by how charges / phonons propagate and scatter—processes that can be constrained by **crystal symmetry**. The project thus attempted : (1) Crystal symmetry and elemental fingerprinting to provide physically meaningful representation to doped and undoped materials systems in LitDx dataset, and (2) Exploring the impact of crystal symmetry elements on transport properties - Seebeck coefficient, electrical conductivity and thermal conductivity and TE performance metrics - figure of merit (zT) and power factor.
 
 ✅ **Working idea**  
 There may be meaningful relationships between:
